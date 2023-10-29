@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Quartos"
+        android:id="@+id/quartos"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Cadastro"
+        android:id="@+id/cadastro"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Login"
+        android:id="@+id/login"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Home"
+        android:id="@+id/tela_principal"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
