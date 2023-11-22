@@ -16,13 +16,16 @@
             android:name=".FormLogin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TelaBoasVindas"
+            android:exported="false" />
+        <activity
+            android:name=".FormCadastro"
             android:exported="false" />
         <activity
             android:name=".Quartos"
             android:exported="false" />
         <activity
-            android:name=".FormCadastro"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

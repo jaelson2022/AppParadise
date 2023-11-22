@@ -4,75 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="clicou"
     android:background="@drawable/background"
     tools:context=".MainActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <ImageView
         android:id="@+id/img_fundo"
         android:layout_width="408dp"
         android:layout_height="160dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/topo02" />
 
     <ImageView
-        android:id="@+id/img_fundo02"
-        android:layout_width="410dp"
-        android:layout_height="320dp"
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="315dp"
+        android:layout_margin="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_fundo"
+        app:layout_constraintTop_toBottomOf="@id/img_fundo"
         app:srcCompat="@drawable/fundo" />
 
     <TextView
-        android:id="@+id/texto_central"
-        android:layout_width="310dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#2196F3"
-        android:text="O melhor hotel do Centro Oeste, próximo ao Aeroporto Internacional de Brasília, um Paraíso para você poder descansar depois de um longo dia de trabalho. Venha se maravilhar conosco!!"
+        android:id="@+id/melhorhotel"
+        android:layout_width="356dp"
+        android:layout_height="105dp"
+        android:layout_margin="40dp"
+        android:text="O melhor hotel do centro oeste, próximo ao aeroporto
+          Internacional de Brasilia, um Paraíso para você poder descansar  Depois de um longo dia de Trabalho. Venha se maravilhar conosco??"
         android:textAlignment="center"
-        android:textColor="#E1FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_fundo" />
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="310dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/img_fundo02"
+        android:id="@+id/bt_buscar"
+        android:layout_width="361dp"
+        android:layout_height="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/melhorhotel"
         app:srcCompat="@drawable/buscar" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="406dp"
-        android:layout_height="171dp"
+        android:id="@+id/imageView5"
+        android:layout_width="415dp"
+        android:layout_height="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_fundo02"
-        app:layout_constraintVertical_bias="0.9"
         app:srcCompat="@drawable/foot" />
+
+    <TextView
+        android:id="@+id/text_lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/blue"
+        android:text="Todas as comodidades em só lugar"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_buscar" />
+
+    <TextView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@color/blue"
+        android:text="Wifi"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_lugar" />
+
+    <TextView
+        android:id="@+id/lavanderia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Lavanderia"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/wifi"
+        app:layout_constraintStart_toEndOf="@+id/wifi"
+        app:layout_constraintTop_toTopOf="@+id/wifi" />
+
+    <TextView
+        android:id="@+id/serviço"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Serviços 24hs"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/lavanderia"
+        app:layout_constraintStart_toEndOf="@+id/lavanderia"
+        app:layout_constraintTop_toTopOf="@+id/lavanderia" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Academia"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/serviço"
+        app:layout_constraintStart_toEndOf="@+id/serviço"
+        app:layout_constraintTop_toTopOf="@+id/serviço" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPA"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

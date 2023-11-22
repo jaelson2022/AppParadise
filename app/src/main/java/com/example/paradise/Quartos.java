@@ -2,6 +2,7 @@ package com.example.paradise;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
@@ -9,44 +10,57 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Quartos extends AppCompatActivity {
+
+    private AppCompatButton bt_reservar;
+    private AppCompatButton bt_reservar01;
+
+    private AppCompatButton bt_reservar02;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quartos);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-            setSupportActionBar(toolbar);
+        IniciarComponentes();
+        bt_reservar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        //Toolbar toolbar = findViewById(R.id.toolbar);
-        //        setSupportActionBar(toolbar);
+                Intent intent = new Intent(Quartos.this,FormLogin.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_reservar01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Quartos.this,FormLogin.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_reservar02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Quartos.this,FormLogin.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+    private void IniciarComponentes(){
+        bt_reservar = findViewById(R.id.bt_reservar);
+        bt_reservar01 = findViewById(R.id.bt_reservar01);
+        bt_reservar02 = findViewById(R.id.bt_Reservar02);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
-        return true;
+    public void voltar(View view) {
+        finish();
     }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.quartos){
-            Toast.makeText(this, "Create a new quartos", Toast.LENGTH_SHORT).show();
-        }
-        if (id == R.id.cadastro){
-            Toast.makeText(this, "Create a new cadastro", Toast.LENGTH_SHORT).show();
-        }
-        if (id == R.id.login){
-            Toast.makeText(this, "Create a new login", Toast.LENGTH_SHORT).show();
-        }
-        if (id == R.id.tela_principal){
-            Toast.makeText(this, "Create a new tela_principal", Toast.LENGTH_SHORT).show();
-        }
-        return true;
-    }
-
 }

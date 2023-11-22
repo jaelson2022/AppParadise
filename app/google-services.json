@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798539718060",
+    "project_id": "paradise-b9d60",
+    "storage_bucket": "paradise-b9d60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798539718060:android:63780f980e91385690ae09",
+        "android_client_info": {
+          "package_name": "com.example.paradise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs8VN3xriZm_PmL00UQD7I_Zc0EmKOnJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

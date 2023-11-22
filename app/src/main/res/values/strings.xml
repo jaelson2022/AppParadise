@@ -3,6 +3,7 @@
     <string name="reservar">reservar</string>
     <string name="pague_em_at_3x_de_r_525_50_ou_vista_r_1438_41">Pague em até 3x de R$ 525.50 ou À vista R$ 1438.41</string>
     <string name="entrar">Entrar</string>
+    <string name="voltar">voltar</string>
     <string name="text_cadastro">Crie uma conta clicando aqui</string>
     <string name="title_cadastro">Cadastre-se</string>
 </resources>
